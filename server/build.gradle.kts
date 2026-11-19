@@ -19,5 +19,12 @@ java {
 }
 
 dependencies {
+    // REST API
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
+
+    // Database communication
+    implementation("org.springframework.boot:spring-boot-starter-jdbc")
+
+    // PostgreSQL driver
+    runtimeOnly("org.postgresql:postgresql")
 }
