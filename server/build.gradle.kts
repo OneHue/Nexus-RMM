@@ -18,6 +18,10 @@ java {
     }
 }
 
+tasks.test {
+    useJUnitPlatform()
+}
+
 dependencies {
     // REST API
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
@@ -33,4 +37,7 @@ dependencies {
 
     // PostgreSQL driver
     runtimeOnly("org.postgresql:postgresql")
+
+    // For testing springboot framework progress
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
