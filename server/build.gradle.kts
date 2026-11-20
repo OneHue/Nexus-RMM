@@ -25,6 +25,12 @@ dependencies {
     // Database communication
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
 
+    // Database migrations
+    implementation("org.springframework.boot:spring-boot-starter-flyway")
+
+    // Flyway compatability package for postgresql
+    runtimeOnly("org.flywaydb:flyway-database-postgresql")
+
     // PostgreSQL driver
     runtimeOnly("org.postgresql:postgresql")
 }
