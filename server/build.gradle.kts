@@ -38,6 +38,12 @@ dependencies {
     // PostgreSQL driver
     runtimeOnly("org.postgresql:postgresql")
 
+    // Security
+    implementation("org.springframework.boot:spring-boot-starter-security")
+
+    // Argon2 cryptographic implementation
+    implementation("org.bouncycastle:bcprov-jdk18on:1.87")
+
     // For testing springboot framework progress
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
