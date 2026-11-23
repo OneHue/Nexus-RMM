@@ -1,5 +1,6 @@
 package com.nexus.server.security;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
@@ -58,6 +59,13 @@ public class SecurityConfig {
                                 .requestMatchers(
                                         HttpMethod.GET,
                                         "/api/v1/auth/logout"
+                                ).authenticated()
+
+                                .requestMatchers(
+                                        HttpMethod.GET,
+                                        "/api/v1/workspaces",
+                                        "/api/v1/workspaces/{workspaceId}",
+                                        "/api/v1/workspaces/{workspaceId}/members"
                                 ).authenticated()
 
                                 .anyRequest().denyAll()

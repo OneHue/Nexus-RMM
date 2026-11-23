@@ -3,6 +3,7 @@ package com.nexus.server.user;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.security.access.AccessDeniedException;
 
 import java.util.Locale;
 import java.util.NoSuchElementException;
@@ -58,7 +59,7 @@ public class UserService {
         User user = getUser(userId);
 
         if (user.isDisabled()) {
-            throw new SecurityException(
+            throw new AccessDeniedException(
                     "User account is disabled"
             );
         }

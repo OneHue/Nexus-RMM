@@ -1,6 +1,7 @@
 package com.nexus.server.workspace;
 
 import com.nexus.server.user.UserService;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -42,7 +43,7 @@ public class WorkspaceMembershipService {
         return repository.findByWorkspaceAndUser(
                 workspaceId,
                 userId
-        ).orElseThrow(() -> new SecurityException(
+        ).orElseThrow(() -> new AccessDeniedException(
                 "Workspace access denied"
         ));
     }
@@ -62,7 +63,7 @@ public class WorkspaceMembershipService {
         WorkspaceMembership membership = requireMembership(userId, workspaceId);
 
         if (!allowedRoles.contains(membership.role())) {
-            throw new SecurityException(
+            throw new AccessDeniedException(
                     "Insufficient workspace permissions"
             );
         }

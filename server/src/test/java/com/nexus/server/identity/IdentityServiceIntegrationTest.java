@@ -16,6 +16,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.EnumSet;
@@ -122,7 +123,7 @@ class IdentityServiceIntegrationTest {
 
         // Viewer cannot perform an administrator operation.
         assertThrows(
-                SecurityException.class,
+                AccessDeniedException.class,
                 () -> membershipService.requireRole(
                         viewer.id(),
                         workspace.id(),
@@ -134,7 +135,7 @@ class IdentityServiceIntegrationTest {
         );
 
         assertThrows(
-                SecurityException.class,
+                AccessDeniedException.class,
                 () -> membershipService.listWorkspaceMembers(
                         viewer.id(),
                         workspace.id()
@@ -143,7 +144,7 @@ class IdentityServiceIntegrationTest {
 
         // Owner cannot access an unrelated workspace.
         assertThrows(
-                SecurityException.class,
+                AccessDeniedException.class,
                 () -> membershipService.requireMembership(
                         owner.id(),
                         otherWorkspace.id()
@@ -191,12 +192,12 @@ class IdentityServiceIntegrationTest {
         );
 
         assertThrows(
-                SecurityException.class,
+                AccessDeniedException.class,
                 () -> userService.requireActiveUser(user.id())
         );
 
         assertThrows(
-                SecurityException.class,
+                AccessDeniedException.class,
                 () -> membershipService.requireMembership(
                         user.id(),
                         workspace.id()
