@@ -46,4 +46,8 @@ dependencies {
 
     // For testing springboot framework progress
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-security-test")
 }
