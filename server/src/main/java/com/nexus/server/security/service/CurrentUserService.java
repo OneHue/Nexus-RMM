@@ -1,8 +1,8 @@
-package com.nexus.server.security;
+package com.nexus.server.security.service;
 
 
 import com.nexus.server.user.User;
-import com.nexus.server.user.UserService;
+import com.nexus.server.user.service.UserService;
 
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.Authentication;

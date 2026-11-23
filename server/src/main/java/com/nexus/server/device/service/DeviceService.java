@@ -1,6 +1,8 @@
-package com.nexus.server.device;
+package com.nexus.server.device.service;
 
-import com.nexus.server.workspace.WorkspaceService;
+import com.nexus.server.device.Device;
+import com.nexus.server.device.repository.DeviceRepository;
+import com.nexus.server.workspace.service.WorkspaceService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

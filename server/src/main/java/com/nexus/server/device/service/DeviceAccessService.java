@@ -1,14 +1,14 @@
-package com.nexus.server.device;
+package com.nexus.server.device.service;
 
 
-import com.nexus.server.security.CurrentUserService;
+import com.nexus.server.device.Device;
+import com.nexus.server.security.service.CurrentUserService;
 import com.nexus.server.user.User;
-import com.nexus.server.workspace.WorkspaceMembershipService;
+import com.nexus.server.workspace.service.WorkspaceMembershipService;
 import com.nexus.server.workspace.WorkspaceRole;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.EnumSet;
 import java.util.List;

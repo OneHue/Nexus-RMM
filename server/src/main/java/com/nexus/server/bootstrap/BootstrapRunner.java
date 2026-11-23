@@ -1,5 +1,6 @@
 package com.nexus.server.bootstrap;
 
+import com.nexus.server.bootstrap.service.InitialSetupService;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

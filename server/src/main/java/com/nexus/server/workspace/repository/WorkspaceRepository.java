@@ -1,5 +1,6 @@
-package com.nexus.server.workspace;
+package com.nexus.server.workspace.repository;
 
+import com.nexus.server.workspace.Workspace;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;

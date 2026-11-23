@@ -2,9 +2,9 @@
 package com.nexus.server.service;
 
 import com.nexus.server.workspace.Workspace;
-import com.nexus.server.workspace.WorkspaceService;
+import com.nexus.server.workspace.service.WorkspaceService;
 import com.nexus.server.device.Device;
-import com.nexus.server.device.DeviceService;
+import com.nexus.server.device.service.DeviceService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

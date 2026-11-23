@@ -2,9 +2,10 @@
 package com.nexus.server.security;
 
 import com.nexus.server.user.User;
-import com.nexus.server.user.UserRepository;
+import com.nexus.server.user.repository.UserRepository;
 import com.nexus.server.workspace.*;
-
+import com.nexus.server.workspace.repository.WorkspaceMembershipRepository;
+import com.nexus.server.workspace.repository.WorkspaceRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

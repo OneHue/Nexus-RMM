@@ -1,6 +1,7 @@
 package com.nexus.server.device;
 
 
+import com.nexus.server.device.controller.DeviceController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.http.ResponseEntity;

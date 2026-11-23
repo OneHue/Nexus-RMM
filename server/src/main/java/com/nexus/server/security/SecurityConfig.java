@@ -1,6 +1,6 @@
 package com.nexus.server.security;
 
-import jakarta.servlet.http.HttpServletRequest;
+import com.nexus.server.security.service.DatabaseUserDetailsService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;

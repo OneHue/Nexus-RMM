@@ -1,6 +1,9 @@
-package com.nexus.server.workspace;
+package com.nexus.server.workspace.service;
 
-import com.nexus.server.user.UserService;
+import com.nexus.server.user.service.UserService;
+import com.nexus.server.workspace.WorkspaceMembership;
+import com.nexus.server.workspace.WorkspaceRole;
+import com.nexus.server.workspace.repository.WorkspaceMembershipRepository;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,8 +1,8 @@
-package com.nexus.server.security;
+package com.nexus.server.security.controller;
 
 
 import com.nexus.server.user.User;
-import com.nexus.server.user.UserService;
+import com.nexus.server.user.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;

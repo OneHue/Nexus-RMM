@@ -1,8 +1,11 @@
-package com.nexus.server.workspace;
+package com.nexus.server.workspace.controller;
 
 
-import com.nexus.server.security.CurrentUserService;
+import com.nexus.server.security.service.CurrentUserService;
 import com.nexus.server.user.User;
+import com.nexus.server.workspace.*;
+import com.nexus.server.workspace.service.WorkspaceMembershipService;
+import com.nexus.server.workspace.service.WorkspaceService;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

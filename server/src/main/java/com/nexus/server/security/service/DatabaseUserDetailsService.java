@@ -1,5 +1,6 @@
-package com.nexus.server.security;
+package com.nexus.server.security.service;
 
+import com.nexus.server.security.repository.UserAuthenticationRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

@@ -1,11 +1,11 @@
-package com.nexus.server.bootstrap;
+package com.nexus.server.bootstrap.service;
 
 import com.nexus.server.user.User;
-import com.nexus.server.user.UserRepository;
+import com.nexus.server.user.repository.UserRepository;
 import com.nexus.server.workspace.Workspace;
-import com.nexus.server.workspace.WorkspaceMembershipRepository;
+import com.nexus.server.workspace.repository.WorkspaceMembershipRepository;
 import com.nexus.server.workspace.WorkspaceRole;
-import com.nexus.server.workspace.WorkspaceService;
+import com.nexus.server.workspace.service.WorkspaceService;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

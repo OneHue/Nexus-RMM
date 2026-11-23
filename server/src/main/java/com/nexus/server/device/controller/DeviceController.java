@@ -1,6 +1,8 @@
 
-package com.nexus.server.device;
+package com.nexus.server.device.controller;
 
+import com.nexus.server.device.Device;
+import com.nexus.server.device.service.DeviceAccessService;
 import org.springframework.security.core.Authentication;
 
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,5 +1,6 @@
-package com.nexus.server.user;
+package com.nexus.server.user.repository;
 
+import com.nexus.server.user.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;

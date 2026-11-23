@@ -2,7 +2,7 @@
 package com.nexus.server.security;
 
 import com.nexus.server.user.User;
-import com.nexus.server.user.UserRepository;
+import com.nexus.server.user.repository.UserRepository;
 
 import org.junit.jupiter.api.Test;
 

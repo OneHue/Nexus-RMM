@@ -1,12 +1,13 @@
 
 package com.nexus.server.device;
 
+import com.nexus.server.device.repository.DeviceRepository;
 import com.nexus.server.user.User;
-import com.nexus.server.user.UserRepository;
+import com.nexus.server.user.repository.UserRepository;
 
 import com.nexus.server.workspace.Workspace;
-import com.nexus.server.workspace.WorkspaceRepository;
-import com.nexus.server.workspace.WorkspaceMembershipRepository;
+import com.nexus.server.workspace.repository.WorkspaceRepository;
+import com.nexus.server.workspace.repository.WorkspaceMembershipRepository;
 import com.nexus.server.workspace.WorkspaceRole;
 
 import org.junit.jupiter.api.Test;

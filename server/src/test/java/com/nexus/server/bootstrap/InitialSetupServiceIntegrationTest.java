@@ -1,9 +1,10 @@
 
 package com.nexus.server.bootstrap;
 
+import com.nexus.server.bootstrap.service.InitialSetupService;
 import com.nexus.server.user.User;
-import com.nexus.server.user.UserRepository;
-import com.nexus.server.workspace.WorkspaceMembershipRepository;
+import com.nexus.server.user.repository.UserRepository;
+import com.nexus.server.workspace.repository.WorkspaceMembershipRepository;
 import com.nexus.server.workspace.WorkspaceRole;
 
 import org.junit.jupiter.api.Test;

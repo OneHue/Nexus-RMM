@@ -1,5 +1,7 @@
-package com.nexus.server.workspace;
+package com.nexus.server.workspace.service;
 
+import com.nexus.server.workspace.Workspace;
+import com.nexus.server.workspace.repository.WorkspaceRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

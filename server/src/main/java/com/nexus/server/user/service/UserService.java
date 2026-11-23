@@ -1,6 +1,8 @@
-package com.nexus.server.user;
+package com.nexus.server.user.service;
 
 
+import com.nexus.server.user.User;
+import com.nexus.server.user.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.security.access.AccessDeniedException;

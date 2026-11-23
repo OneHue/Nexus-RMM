@@ -1,4 +1,4 @@
-package com.nexus.server.security;
+package com.nexus.server.security.repository;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.core.userdetails.User;
