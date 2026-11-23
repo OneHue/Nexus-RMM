@@ -68,6 +68,17 @@ public class SecurityConfig {
                                         "/api/v1/workspaces/{workspaceId}/members"
                                 ).authenticated()
 
+                                .requestMatchers(
+                                        HttpMethod.GET,
+                                        "/api/v1/workspaces/{workspaceId}/devices",
+                                        "/api/v1/workspaces/{workspaceId}/devices/{deviceId}"
+                                ).authenticated()
+
+                                .requestMatchers(
+                                        HttpMethod.PATCH,
+                                        "/api/v1/workspaces/{workspaceId}/devices/{deviceId}"
+                                ).authenticated()
+
                                 .anyRequest().denyAll()
                         // anyRequest().denyAll() blocks everything else for now.
                         // Default Deny Security policy is the goal for the scope of Nexus
