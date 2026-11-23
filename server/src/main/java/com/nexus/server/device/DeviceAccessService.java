@@ -68,7 +68,7 @@ public class DeviceAccessService {
                 workspaceId,
                 EnumSet.of(
                         WorkspaceRole.OWNER,
-                        WorkspaceRole.OPERATOR
+                        WorkspaceRole.ADMIN
                 )
         );
 

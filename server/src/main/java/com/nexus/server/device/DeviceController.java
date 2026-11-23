@@ -45,8 +45,8 @@ public class DeviceController {
     ) {
         Device device = deviceAccess.getDevice(
                 authentication,
-                deviceId,
-                workspaceId
+                workspaceId,
+                deviceId
         );
 
         return toResponse(device);
