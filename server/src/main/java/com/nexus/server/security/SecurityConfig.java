@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -33,6 +34,7 @@ public class SecurityConfig {
     // This defines the security rules applied to incoming HTTP requests.
     // The Spring Security processes these rules before the request reaches the application's controller.
     @Bean
+    @Order(2)
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http
     ) throws Exception {
@@ -77,6 +79,12 @@ public class SecurityConfig {
                                 .requestMatchers(
                                         HttpMethod.PATCH,
                                         "/api/v1/workspaces/{workspaceId}/devices/{deviceId}"
+                                ).authenticated()
+
+                                .requestMatchers(
+                                        HttpMethod.POST,
+                                        "/api/v1/workspaces/{workspaceId}/agent-enrollments",
+                                        "/api/v1/workspaces/{workspaceId}/devices/{deviceId}/credentials/revoke"
                                 ).authenticated()
 
                                 .anyRequest().denyAll()
