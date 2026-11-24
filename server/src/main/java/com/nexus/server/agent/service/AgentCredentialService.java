@@ -1,5 +1,7 @@
-package com.nexus.server.agent;
+package com.nexus.server.agent.service;
 
+import com.nexus.server.agent.AgentPrincipal;
+import com.nexus.server.agent.AgentTokenUtil;
 import com.nexus.server.device.service.DeviceService;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;

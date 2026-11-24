@@ -1,6 +1,7 @@
 
-package com.nexus.server.agent;
+package com.nexus.server.agent.service;
 
+import com.nexus.server.agent.AgentTokenUtil;
 import com.nexus.server.device.Device;
 import com.nexus.server.device.repository.DeviceRepository;
 import com.nexus.server.security.service.CurrentUserService;

@@ -1,6 +1,8 @@
-package com.nexus.server.agent;
+package com.nexus.server.agent.controller;
 
 
+import com.nexus.server.agent.AgentPrincipal;
+import com.nexus.server.agent.service.AgentEnrollmentService;
 import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

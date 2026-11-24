@@ -2,7 +2,7 @@ package com.nexus.server.security;
 
 
 import com.nexus.server.agent.AgentAuthenticationFilter;
-import com.nexus.server.agent.AgentCredentialService;
+import com.nexus.server.agent.service.AgentCredentialService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;

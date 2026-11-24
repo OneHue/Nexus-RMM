@@ -1,6 +1,8 @@
-package com.nexus.server.agent;
+package com.nexus.server.agent.controller;
 
 
+import com.nexus.server.agent.service.AgentCredentialService;
+import com.nexus.server.agent.service.AgentEnrollmentService;
 import com.nexus.server.security.service.CurrentUserService;
 import com.nexus.server.workspace.WorkspaceRole;
 import com.nexus.server.workspace.service.WorkspaceMembershipService;
